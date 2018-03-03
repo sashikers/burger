@@ -1,3 +1,42 @@
 body {
-	/*background-color: blue;*/
+	background-color: #F7DBA7;
+}
+
+h1 {
+	text-align: center;
+	color: #251605;
+}
+
+ul {
+	text-align: center;
+	background-color: #F1AB86;
+	margin: auto;
+}
+
+li {
+	border: 2px black solid;
+	width: 200px;
+	margin: auto;
+	padding: 5px;
+	font: #251605;
+	font-weight: bold;
+	background-color: #C57B57;
+	list-style-type: none;
+}
+
+p {
+	margin: 10px;
+	padding: 0px;
+}
+
+#addBurger {
+	margin: auto;
+	text-align: center;
+}
+
+#submitButton {
+	font-weight: bold;
+	background-color: #9CAFB7;
+	margin: 5px;
+	padding: 10px;
 }
