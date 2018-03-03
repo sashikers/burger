@@ -11,7 +11,9 @@ ul {
 	text-align: center;
 	background-color: #F1AB86;
 	margin: auto;
-	padding: 10px;
+	padding: 20px;
+	padding-bottom: 30px;
+	width: 300px;
 }
 
 li {
@@ -38,14 +40,24 @@ p {
 
 #submitButton {
 	font-weight: bold;
-	background-color: #9CAFB7;
+	background-color: #C57B57;
 	margin: 5px;
 	padding: 10px;
+	border-radius: 10px;
 }
-
+#submitButton:hover {
+	background-color: #9CAFB7;
+}
+label {
+	font-weight: bold;
+}
 .devour-burger { 
 	background-color: #F1AB86;
 	border: 2px #251605 solid;
+}
+
+h3 {
+	color: #251605;
 }
 
 /*css is terrible, need to do some work*/

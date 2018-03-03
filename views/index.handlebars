@@ -1,5 +1,6 @@
 <h1>Burgers-a-hoy!</h1>
 
+<h3> Uneaten burgers! Why not try one?</h3>
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
@@ -8,6 +9,7 @@
   {{/each}}
 </ul>
 
+<h3>Burgers you already tried. Why not try again?</h3>
 <ul>
   {{#each burgers}}
     {{#if devoured}}
@@ -21,7 +23,7 @@
 <form class="create-form">
 
   <div class="form-group">
-    <label for="newBurger">Burger:</label>
+    <label for="newBurger">Burger name:</label>
     <input type="text" id="newBurgerName" name="name">
   </div>
 

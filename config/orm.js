@@ -29,7 +29,7 @@ var orm = {
 		connection.query(qs, [tableInput, colOne, valOne, valId], function(err, result) {
 			if (err) {throw err};
 			console.log("updateOne");
-			console.log(result);
+			// console.log(result);
 		});
 	}
 };
