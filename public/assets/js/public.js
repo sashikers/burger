@@ -20,10 +20,6 @@ $(function() {
 		);
 	});
 
-
-	// add POST request for new burger
-
-	// add PUT request for update 
 	$(".create-form").on("submit", function(event) {
 		event.preventDefault();
 
