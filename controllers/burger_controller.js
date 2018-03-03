@@ -21,6 +21,28 @@ router.post("/api/burgers", function(req, res) {
 	});
 });
 
+router.put("/api/cats/:id", function(req, res) {
+	var id = req.params.id;
+	var condition = req.body.devoured;
+
+	console.log("condition", condition);
+	if (condition == "true") {
+		condition = 1; 
+	} else {
+		condition =0;
+	}
+	console.log("new condition", condition);
+	console.log("id", id);
+
+	burger.updateOne(condition, id, function(result) {
+		console.log("result", result);
+		if (result.changedRows == 0) {
+			return res.status(404).end();
+		} else {
+			res.status(200).end();
+		}
+	});
+});
 // need to make an UPDATE router 
 
 module.exports = router;

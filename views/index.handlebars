@@ -8,6 +8,14 @@
   {{/each}}
 </ul>
 
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
 <div id="addBurger">
 <h2>Add a Burger</h2>
 <form class="create-form">

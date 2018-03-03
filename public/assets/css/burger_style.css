@@ -11,12 +11,14 @@ ul {
 	text-align: center;
 	background-color: #F1AB86;
 	margin: auto;
+	padding: 10px;
 }
 
 li {
 	border: 2px black solid;
 	width: 200px;
 	margin: auto;
+	margin-top: 10px;
 	padding: 5px;
 	font: #251605;
 	font-weight: bold;

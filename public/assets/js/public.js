@@ -3,7 +3,21 @@ console.log("helloooooooowow");
 $(function() {
 	$(".devour-burger").on("click", function(event) {
 		var id = $(this).data("id");
-		// need to finish listeners
+		var newEaten = $(this).data("neweaten");
+
+		var newEatenState = {
+			devoured: newEaten
+		};
+
+		$.ajax("/api/cats/" + id, {
+			type: "PUT",
+			data: newEatenState
+		}).then(
+			function() {
+				console.log("changed devoured to " + newEaten);
+				location.reload();
+			}
+		);
 	});
 
 
