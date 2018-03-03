@@ -19,3 +19,7 @@ The user is then able to "devour the burger," or if it already has been eaten, m
 
 ![Burger is eaten](public/assets/img/burgeriseaten.png)
 
+### Remaining improvements
+- _Deploying to Heroku_. Encountering errors while deploying to Heroku. Cannot seem to link the database correctly. 
+- _Visuals_. CSS could definitely be more pro-style. 
+- _Reloading_. App doesn't always reload when a burger status is changed.  
