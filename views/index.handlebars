@@ -2,9 +2,9 @@
 
 <ul>
   {{#each burgers}}
-    <li>
-      <p>{{burger_name}}</p>
-    </li>
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=true}}
+    {{/unless}}
   {{/each}}
 </ul>
 

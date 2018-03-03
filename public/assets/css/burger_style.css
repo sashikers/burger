@@ -40,3 +40,10 @@ p {
 	margin: 5px;
 	padding: 10px;
 }
+
+.devour-burger { 
+	background-color: #F1AB86;
+	border: 2px #251605 solid;
+}
+
+/*css is terrible, need to do some work*/

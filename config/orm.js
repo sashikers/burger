@@ -12,12 +12,15 @@ var orm = {
 			cb(result);
 		});
 	},
-	insertOne: function(tableInput, colOne, valOne) {
+	insertOne: function(tableInput, colOne, valOne, cb) {
 		var qs = "INSERT INTO ?? (??) VALUES (?);";
 		connection.query(qs, [tableInput, colOne, valOne], function(err, result) {
-			if (err) {throw err};
+			if (err) {
+				console.log(err);
+			}
 			console.log("insertOne");
 			console.log(result);
+			cb(result);
 		});
 	},
 	updateOne: function(tableInput, colOne, valOne, valId) {
