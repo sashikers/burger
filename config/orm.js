@@ -14,6 +14,7 @@ var orm = {
 	},
 	insertOne: function(tableInput, colOne, valOne, cb) {
 		var qs = "INSERT INTO ?? (??) VALUES (?);";
+		console.log("insertOne qs", qs);
 		connection.query(qs, [tableInput, colOne, valOne], function(err, result) {
 			if (err) {
 				console.log(err);
