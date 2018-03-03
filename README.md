@@ -6,4 +6,4 @@ Use MVC design pattern: Use Node and MySQL to query and route data, and Handleba
 
 ### Overview
 
-[Initial interface](public/assets/img/initialinterface.png)
+![Initial interface](public/assets/img/initialinterface.png)
