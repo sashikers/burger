@@ -2,7 +2,18 @@
 
 ### Objective
 Utilize MySQL, Node, Express, Handlebars, and a custom ORM. 
-Use MVC design pattern: Use Node and MySQL to query and route data, and Handlebars to generate the HTML. 
+Use MVC design pattern: Use Node and MySQL to query and route data, and Handlebars to generate the HTML.
+
+### Instructions
+1. Clone the repository
+2. Navigate to the folder in Terminal and install the required node.js packages by typing `npm install`
+3. Create a MySQL database using a GUI of your choice or via a command line by:
+..1. Logging into the database by typing `mysql -u root -p`
+..2. Within the `mysql>` command line, create the database: `source schema.sql`
+..3. Then seed the database: `source seeds.sql`
+..4. Exit the `mysql>` command line: `exit`
+4. In Terminal, create a server connection by running `node server.js`
+5. In browser, navigate to `localhost:`, appending the appropriate port 
 
 ### Overview
 
